@@ -1,12 +1,7 @@
-﻿@use './fonts';
+@use './normalize';
+@use './fonts';
 @use './variables';
 @use './typography';
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 html,
 body {

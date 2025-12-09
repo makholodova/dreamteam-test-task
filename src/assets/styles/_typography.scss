@@ -1,4 +1,4 @@
-﻿@use './variables' as v;
+@use './variables' as v;
 
 $font-family: "DM Sans", sans-serif;
 $second-family: "Nunito Sans", sans-serif;
@@ -100,13 +100,6 @@ h5 {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: v.$base-blue;
-}
-
-.text-mini {
-  font-weight: $font-weight-regular;
-  font-size: $font-size-mini;
-  line-height: 133%;
-  color: v.$neutral-600;
 }
 
 .text-mini-bold {
