@@ -1,4 +1,5 @@
 @use './variables' as v;
+@use './mixins' as m;
 
 $font-family: "DM Sans", sans-serif;
 $second-family: "Nunito Sans", sans-serif;
@@ -35,6 +36,10 @@ h2 {
   font-weight: $font-weight-bold;
   font-size: $font-size-h2;
   line-height: 135%;
+  @include m.phone {
+    font-size: 18px;
+    line-height: 133%;
+  }
 
 }
 
@@ -84,6 +89,12 @@ h5 {
   font-size: $font-size-small;
   line-height: 143%;
   color: v.$neutral-600;
+  @include m.phone {
+    font-weight: $font-weight-regular;
+    font-size: $font-size-mini;
+    line-height: 133%;
+    color: v.$neutral-600;
+  }
 }
 
 .text-small-bold {
